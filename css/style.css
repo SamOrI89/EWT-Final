@@ -1,11 +1,16 @@
 body{
-	background-image: url(../images/background.gif);
-	background-repeat: repeat-x;
+	background-color: #D4E4EF;
+	color: #628D62;
 	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 header nav #text-links{
 	font-size: 200%;
+	position: absolute;
+	top: 5%;
+	left: 20%;
+	word-spacing: 10px;
 }
 
 a:link	{	
@@ -29,11 +34,12 @@ a:hover	{
 }	
 
 article{
-	position: absolute;
-	left: 19%;
+	position: relative;
+	left: 35%;
+	bottom: 500px;
 	font-size: 140%;
-	width: 70%;
-	top: 21%;
+	width: 65%;
+	height: 700px;
 }
 
 form{
@@ -44,9 +50,9 @@ form{
 }
 
 aside{
-	width: 15%;
-	position: absolute;
-	top: 22%;
+	width: 20%;
+	position: relative;
+	top: 200px;
 }
 
 
@@ -62,7 +68,50 @@ h3{
 }
 
 footer{
-	position: absolute;
-	top: 150%;
 	width: 98%;
+	position: absolute;
+	top: 1500px;
+}
+
+#services-images,
+article p{
+	width: 70%;
+}
+
+#downloadPortfolio{
+	height: 35px;
+	width: 192px;
+	font-size: 17px;
+	padding-top: 9px;
+	padding-left: 7px;
+	/*color: white;
+	background-image: url(../images/donload-button.jpg);*/
+}
+
+form{
+	text-align: center;
+}
+
+#widebox{
+	position: relative;
+	left: 20%;
+	bottom: 350px;
+	width: 80%;
+}
+
+#widebox p{
+	position: relative;
+	bottom: 150px;
+	left: 2%;
+	font-size: 200%;
+	width: 50%;
+	color: white;
+}
+
+input{
+	color: black;
+}
+
+label{
+	font-weight: bold;
 }
