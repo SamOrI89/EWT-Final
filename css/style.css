@@ -115,3 +115,19 @@ input{
 label{
 	font-weight: bold;
 }
+
+#main-image{
+	width: 92%;
+	text-align: center;
+	background: grey;
+}
+
+#slide-show{
+	width: 90%;
+	background: #000;
+	padding: 10px;
+}
+
+.thumbnail{
+	padding-right: 10px;
+}
