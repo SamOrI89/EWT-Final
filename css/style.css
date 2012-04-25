@@ -5,14 +5,6 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-header nav #text-links{
-	font-size: 200%;
-	position: absolute;
-	top: 5%;
-	left: 20%;
-	word-spacing: 10px;
-}
-
 a:link	{	
 	color:	#000;
 	text-decoration: none;
@@ -32,6 +24,20 @@ a:hover	{
 	color:	#638D8D;
 	text-decoration: none;
 }	
+
+header nav #text-links{
+	font-size: 200%;
+	position: absolute;
+	top: 5%;
+	left: 20%;
+	word-spacing: 10px;
+}
+
+
+#footer-links{
+	font-size: 200%;
+	word-spacing: 10px;
+}
 
 article{
 	position: relative;
@@ -74,8 +80,11 @@ footer{
 }
 
 #services-images,
-article p{
+#copy-text{
 	width: 70%;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
 }
 
 #downloadPortfolio{
@@ -84,8 +93,6 @@ article p{
 	font-size: 17px;
 	padding-top: 9px;
 	padding-left: 7px;
-	/*color: white;
-	background-image: url(../images/donload-button.jpg);*/
 }
 
 form{
@@ -131,3 +138,189 @@ label{
 .thumbnail{
 	padding-right: 10px;
 }
+
+/*iPad*/
+@media only screen and (max-width: 768px){
+	article{
+		position: absolute;
+		top: 50px;
+	}
+
+	header nav #text-links{
+		font-size: 150%;
+		position: absolute;
+		left: 40%;
+		top: 1%;
+		word-spacing: 5px;
+		width: 60%;
+	}
+
+	#footer-links{
+		font-size: 102%;
+	}
+
+	aside{
+		width: 0px;
+		font-size: 0%;
+	}
+
+	form{
+		border-color: #000;
+		border-style: none;
+		width: 0%;
+		padding: 0%;
+	}
+
+	#downloadPortfolio,
+	input,
+	textarea{
+		width: 0%;
+		height: 0%;
+	}
+
+	#services-images,
+	#copy-text{
+		width: 95%;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		position: absolute;
+		right: 58%;
+	}
+
+	#services-images{
+		position: absolute;
+		top: 20%;
+
+	background-color: #D4E4EF;
+	}
+
+	#copy-header{
+		position: absolute;
+		top: 115%;
+		right: 58%;
+		width: 95%;
+	}
+
+	#copy-text{
+		position: absolute;
+		top: 130%;
+	}
+
+	#main-image{
+		position: absolute;
+		right: 8%;
+		top: 25%;
+		width: 720px;
+	}
+
+	#slide-show{
+		position: absolute;
+		right: 10%;
+		top: 98%;
+		width: 140%;
+	}
+
+	footer{
+		width: 98%;
+		position: absolute;
+		top: 1320px;
+	}
+}
+
+/*iPhone*/
+@media only screen and (max-width: 320px){
+	
+	body{
+		overflow-x: hidden;
+	}
+
+	header nav #text-links{
+		font-size: 150%;
+		position: absolute;
+		top: 23%;
+		left: 5%;
+		word-spacing: 3px;
+		width: 85%;
+	}
+
+	#footer-links{
+		font-size: 102%;
+	}
+
+	article{
+		position: absolute;
+		top: 50px;
+		left: 400px;
+	}
+	aside{
+		width: 0px;
+		font-size: 0%;
+		border-width: 0px;
+		border-style: none;
+	}
+
+	form{
+		border-color: #000;
+		border-style: none;
+		width: 0%;
+		padding: 0%;
+	}
+
+	#downloadPortfolio,
+	input,
+	textarea{
+		width: 0%;
+		height: 0%;
+	}
+
+
+	#services-images{
+		width: 0px;
+		height: 0px;
+	background-color: #D4E4EF;
+	}
+
+	#copy-header{
+		position: absolute;
+		top: 25%;
+		right: 155%;
+		width: 140%;
+		background-color: #D4E4EF;
+	}
+
+	#copy-text{
+		position: absolute;
+		top: 40%;
+		right: 155%;
+		width: 140%;
+		background-color: #D4E4EF;
+
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+
+	#main-image{
+		position: absolute;
+		right: 157%;
+		top: 30%;
+		width: 280px;
+	}
+
+	#slide-show{
+		position: absolute;
+		right: 152%;
+		top: 105%;
+		width: 220px;
+		height: 200px;
+		overflow: auto;
+	}
+
+	footer{
+		width: 98%;
+		position: absolute;
+		top: 1010px;
+	}
+}
+

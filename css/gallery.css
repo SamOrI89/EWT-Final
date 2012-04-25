@@ -1,0 +1,9 @@
+.thumbnail img:hover{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-transition: all 1s ease;
+
+	-webkit-transform: scale(1.95, 1.95);
+	-moz-transform: scale(1.95, 1.95);
+	-transform: scale(1.95, 1.95);
+}

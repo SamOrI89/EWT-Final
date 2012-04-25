@@ -1,5 +1,21 @@
 $(document).ready(function()
 {
+	//adjust main image size
+	/*<a href="http://www.bestbuy.com/">
+        <img src="images/portfolio/bestbuy.jpg" height="506px"  width="720px"  />
+      </a>*/
+
+     		if ($(window).width() <= 320)
+			{
+				$('#main-image img').attr('width', '250px')
+   			}
+
+			else if ($(window).width() <= 720)
+			{
+				$('#main-image img').attr('width', '680px')
+   			}
+
+
 	var slideShowContainer = $('#slide-show');
 
 	var arr = {};
@@ -56,7 +72,21 @@ $(document).ready(function()
 			e.preventDefault();
 			var imgName = $(this).attr('id');
 			var link = arr[$(this).attr('id')];
+
+			if ($(window).width() <= 320)
+			{
+   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="250px" /></a>');
+			}
+
+			else if ($(window).width() <= 720)
+			{
+   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="680px" /></a>');
+			}
+
+			else
+			{
    			var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="720px" /></a>');
+			}
 
 			$('#main-image').html(clickHTML);
 		});
