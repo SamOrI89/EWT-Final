@@ -1,10 +1,6 @@
 $(document).ready(function()
 {
 	//adjust main image size
-	/*<a href="http://www.bestbuy.com/">
-        <img src="images/portfolio/bestbuy.jpg" height="506px"  width="720px"  />
-      </a>*/
-
      		if ($(window).width() <= 320)
 			{
 				$('#main-image img').attr('width', '250px')
@@ -67,11 +63,9 @@ $(document).ready(function()
 
    		var thumbnail = $('<span></span>').addClass('thumbnail');
    		
-   		var imgThumb = $('<a href="" id="'+values[0]+'"><img src="images/portfolio/'+values[0]+'.jpg" height="80px" width="80px" /></a>');
+   		var imgThumb = $('<a href="" id="'+values[0]+'"><img src="http://iam.colum.edu/students/samuel.stine/ewt/final-images/portfolio/'+values[0]+'.jpg" height="80px" width="80px" /></a>');
    		$(thumbnail).append(imgThumb);
    		slideShowContainer.append(thumbnail);
-
-   		//var img = $('<img src="images/portfolio/'+values[0]+'.jpg" />');
 
    		$(imgThumb).click(function(e){
 			e.preventDefault();
@@ -80,21 +74,21 @@ $(document).ready(function()
 
 			if ($(window).width() <= 320)
 			{
-   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="250px" /></a>');
+   				var clickHTML = $('<a href="'+link+'"><img src="http://iam.colum.edu/students/samuel.stine/ewt/final-images/portfolio/'+imgName+'.jpg" height="506px" width="250px" /></a>');
 			}
 
 			else if ($(window).width() <= 480)
 			{
-   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="430px" /></a>');
+   				var clickHTML = $('<a href="'+link+'"><img src="http://iam.colum.edu/students/samuel.stine/ewt/final-images/portfolio/'+imgName+'.jpg" height="506px" width="430px" /></a>');
 			}
 			else if ($(window).width() <= 720)
 			{
-   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="680px" /></a>');
+   				var clickHTML = $('<a href="'+link+'"><img src="http://iam.colum.edu/students/samuel.stine/ewt/final-images/portfolio/'+imgName+'.jpg" height="506px" width="680px" /></a>');
 			}
 
 			else
 			{
-   			var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="720px" /></a>');
+   			var clickHTML = $('<a href="'+link+'"><img src="http://iam.colum.edu/students/samuel.stine/ewt/final-images/portfolio/'+imgName+'.jpg" height="506px" width="720px" /></a>');
 			}
 
 			$('#main-image').html(clickHTML);
