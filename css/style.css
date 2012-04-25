@@ -139,6 +139,47 @@ label{
 	padding-right: 10px;
 }
 
+@media only screen and (max-width: 920px){
+	header nav #text-links{
+		font-size: 140%;
+		position: absolute;
+		left: 35%;
+		top: 1%;
+		word-spacing: 5px;
+		width: 60%;
+	}
+
+	form{
+		border-color: #000;
+		border-style: double;
+		width: 132%;
+		padding: 2%;
+	}
+
+	aside{
+		width: 20%;
+		position: relative;
+		top: 20px;
+	}
+
+	article{
+		position: relative;
+		left: 35%;
+		bottom: 650px;
+		font-size: 140%;
+		width: 65%;
+		height: 700px;
+	}
+
+	#services-images,
+	#copy-text{
+		width: 90%;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
 /*iPad*/
 @media only screen and (max-width: 768px){
 	article{
@@ -227,6 +268,104 @@ label{
 		top: 1320px;
 	}
 }
+
+/*iPhone*/
+@media only screen and (max-width: 480px){
+	
+	body{
+		overflow-x: hidden;
+	}
+
+	header nav #text-links{
+		font-size: 150%;
+		position: absolute;
+		top: 23%;
+		left: 5%;
+		word-spacing: 3px;
+		width: 85%;
+	}
+
+	#footer-links{
+		font-size: 102%;
+	}
+
+	article{
+		position: absolute;
+		top: 50px;
+		left: 400px;
+	}
+	aside{
+		width: 0px;
+		font-size: 0%;
+		border-width: 0px;
+		border-style: none;
+	}
+
+	form{
+		border-color: #000;
+		border-style: none;
+		width: 0%;
+		padding: 0%;
+	}
+
+	#downloadPortfolio,
+	input,
+	textarea{
+		width: 0%;
+		height: 0%;
+	}
+
+
+	#services-images{
+		width: 0px;
+		height: 0px;
+	background-color: #D4E4EF;
+	}
+
+	#copy-header{
+		position: absolute;
+		top: 25%;
+		right: 155%;
+		width: 140%;
+		background-color: #D4E4EF;
+	}
+
+	#copy-text{
+		position: absolute;
+		top: 40%;
+		right: 155%;
+		width: 140%;
+		background-color: #D4E4EF;
+
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+
+	#main-image{
+		position: absolute;
+		right: 88%;
+		top: 30%;
+		width: 430px;
+	}
+
+	#slide-show{
+		position: absolute;
+		right: 90%;
+		top: 105%;
+		width: 400px;
+		height: 200px;
+		overflow: auto;
+	}
+
+	footer{
+		width: 98%;
+		position: absolute;
+		top: 1010px;
+	}
+}
+
+
 
 /*iPhone*/
 @media only screen and (max-width: 320px){

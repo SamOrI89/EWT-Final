@@ -10,6 +10,11 @@ $(document).ready(function()
 				$('#main-image img').attr('width', '250px')
    			}
 
+			else if ($(window).width() <= 480)
+			{
+				$('#main-image img').attr('width', '430px')
+   			}
+
 			else if ($(window).width() <= 720)
 			{
 				$('#main-image img').attr('width', '680px')
@@ -78,6 +83,10 @@ $(document).ready(function()
    				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="250px" /></a>');
 			}
 
+			else if ($(window).width() <= 480)
+			{
+   				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="430px" /></a>');
+			}
 			else if ($(window).width() <= 720)
 			{
    				var clickHTML = $('<a href="'+link+'"><img src="images/portfolio/'+imgName+'.jpg" height="506px" width="680px" /></a>');
