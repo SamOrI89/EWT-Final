@@ -29,8 +29,9 @@ header nav #text-links{
 	font-size: 200%;
 	position: absolute;
 	top: 5%;
-	left: 20%;
+	left: 25%;
 	word-spacing: 10px;
+	width: 75%;
 }
 
 
@@ -76,7 +77,7 @@ h3{
 footer{
 	width: 98%;
 	position: absolute;
-	top: 1500px;
+	top: 1550px;
 }
 
 #services-images,
